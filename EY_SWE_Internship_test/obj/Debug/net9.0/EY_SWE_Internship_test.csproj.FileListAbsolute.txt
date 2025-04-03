@@ -1,0 +1,15 @@
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/bin/Debug/net9.0/EY_SWE_Internship_test
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/bin/Debug/net9.0/EY_SWE_Internship_test.deps.json
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/bin/Debug/net9.0/EY_SWE_Internship_test.runtimeconfig.json
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/bin/Debug/net9.0/EY_SWE_Internship_test.dll
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/bin/Debug/net9.0/EY_SWE_Internship_test.pdb
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/EY_SWE_Internship_test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/EY_SWE_Internship_test.AssemblyInfoInputs.cache
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/EY_SWE_Internship_test.AssemblyInfo.cs
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/EY_SWE_Internship_test.csproj.CoreCompileInputs.cache
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/EY_SWE_Internship_test.dll
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/refint/EY_SWE_Internship_test.dll
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/EY_SWE_Internship_test.pdb
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/EY_SWE_Internship_test.genruntimeconfig.cache
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/obj/Debug/net9.0/ref/EY_SWE_Internship_test.dll
+/Users/danpetri/Documents/Personal_programming/Internship_2025/EY/EY_SWE_Internship_test/EY_SWE_Internship_test/bin/Debug/net9.0/Resources/input.txt
