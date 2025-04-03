@@ -165,34 +165,42 @@ public class SolveProblem
                     bool hasMerged = false;
                     foreach (var kvp in intervalRanges[j])
                     {
-                        if (_rects[i].Y < kvp.Key && _rects[i].Y + _rects[i].Height > kvp.Key)
+                        if (kvp.Key > _rects[i].Y + _rects[i].Height - 1 || kvp.Value < _rects[i].Y)
+                            continue;
+                            
+                        if (kvp.Key < _rects[i].Y && kvp.Value > _rects[i].Y + _rects[i].Height - 1)
+                        {
+                            hasMerged = true;
+                            break;
+                        }
+                        else if (_rects[i].Y <= kvp.Key && _rects[i].Y + _rects[i].Height - 1>= kvp.Key)
                         {
                             intervalRanges[j].Remove(kvp.Key);
-                            intervalRanges[j].Add(_rects[i].Y, _rects[i].Y + _rects[i].Height);
+                            intervalRanges[j].Add(_rects[i].Y, _rects[i].Y + _rects[i].Height - 1);
                             hasMerged = true;
                             break;
                         }
-                        else if(kvp.Key > _rects[i].Y && kvp.Key < _rects[i].Y + _rects[i].Height)
+                        else if(kvp.Key <= _rects[i].Y && kvp.Value < _rects[i].Y + _rects[i].Height - 1)
                         {
-                            intervalRanges[j][kvp.Key] = Math.Max(kvp.Value, _rects[i].Y + _rects[i].Height);
+                            intervalRanges[j][kvp.Key] = _rects[i].Y + _rects[i].Height - 1;
                             hasMerged = true;
                             break;
                         }
-                        else if (kvp.Value > _rects[i].Y && kvp.Value < _rects[i].Y + _rects[i].Height)
+                        else if (kvp.Key > _rects[i].Y && kvp.Value > _rects[i].Y + _rects[i].Height - 1)
                         {
                             var auxKVP = kvp;
                             intervalRanges[j].Remove(kvp.Key);
-                            intervalRanges[j].Add(Math.Min(auxKVP.Key, _rects[i].Y), auxKVP.Value);
+                            intervalRanges[j].Add(_rects[i].Y, auxKVP.Value);
                             hasMerged = true;
                             break;
                         }
                     }
                     if(!hasMerged)
-                        intervalRanges[j].Add(_rects[i].Y, _rects[i].Y + _rects[i].Height);
+                        intervalRanges[j].Add(_rects[i].Y, _rects[i].Y + _rects[i].Height - 1);
                 }
                 else
                 {
-                    intervalRanges.Add(j, new SortedList<int, int>{{_rects[i].Y, _rects[i].Y+ _rects[i].Height}});
+                    intervalRanges.Add(j, new SortedList<int, int>{{_rects[i].Y, _rects[i].Y+ _rects[i].Height - 1}});
                 }
             }
         }
@@ -204,7 +212,7 @@ public class SolveProblem
             {
                 foreach (var kvp in intervalRanges[i])
                 {
-                    nrOfOccupiedCells += (kvp.Value - kvp.Key);
+                    nrOfOccupiedCells += (kvp.Value - kvp.Key + 1);
                 }
             }
         }
